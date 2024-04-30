@@ -1,0 +1,19 @@
+freakeno16@fknlp:~$ ncat -C httpbin.org 80
+POST /#Images HTTP/1.1
+Host: httpbin.org
+Content-Length: 13
+
+HTTP/1.1 405 METHOD NOT ALLOWED
+Date: Tue, 30 Apr 2024 10:12:01 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Allow: GET, OPTIONS, HEAD
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
